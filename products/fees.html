@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Такси - Balkan Gas Hub</title>
+    <meta name="description" content="Такси и цени за услугите на Balkan Gas Hub - централната газова борса за Югоизточна Европа.">
+    <meta name="keywords" content="такси, цени, газова борса, природен газ, търговия, България, Балкани, енергия">
+    <meta name="author" content="Balkan Gas Hub">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Такси - Balkan Gas Hub">
+    <meta property="og:description" content="Такси и цени за услугите на централната газова борса">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.balkangashub.bg/products/fees">
+    <meta property="og:image" content="https://www.balkangashub.bg/imgs/logo_1.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Такси - Balkan Gas Hub">
+    <meta name="twitter:description" content="Такси и цени за услугите на централната газова борса">
+    <meta name="twitter:image" content="https://www.balkangashub.bg/imgs/logo_1.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.balkangashub.bg/products/fees">
+    
+    <!-- Preload fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://www.balkangashub.bg/imgs/logo_1.png" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Такси - Balkan Gas Hub",
+        "description": "Такси и цени за услугите на централната газова борса",
+        "url": "https://www.balkangashub.bg/products/fees",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Balkan Gas Hub",
+            "url": "https://www.balkangashub.bg"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link" data-i18n="app.skip_to_content">Прескочи към основното съдържание</a>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p data-i18n="cookie.message">Използваме бисквитки за подобряване на вашето потребителско изживяване.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary" data-i18n="cookie.accept">Приемам</button>
+                <button id="reject-cookies" class="btn btn-secondary" data-i18n="cookie.reject">Отхвърлям</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://www.balkangashub.bg/imgs/logo_1.png" alt="Balkan Gas Hub Logo" width="200" height="56">
+                    </a>
+                </div>
+                
+                <div class="header-controls">
+                    <!-- Theme Switcher -->
+                    <div class="theme-switcher">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Превключи тема" data-i18n-aria="theme.toggle">
+                            <svg class="theme-icon light-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="theme-icon dark-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button id="lang-toggle" class="lang-toggle" aria-label="Превключи език" data-i18n-aria="app.switch_language">
+                            <span id="current-lang">BG</span>
+                            <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="lang-dropdown">
+                            <button class="lang-option" data-lang="bg" data-i18n="languages.bg">Български</button>
+                            <button class="lang-option" data-lang="en" data-i18n="languages.en">English</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Отвори меню" data-i18n-aria="app.open_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.about">За нас</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.about.management">Декларация на ръководството</a></li>
+                                <li><a href="#" data-i18n="nav.about.company">За компанията</a></li>
+                                <li><a href="#" data-i18n="nav.about.ownership">Акционери</a></li>
+                                <li><a href="#" data-i18n="nav.about.structure">Структура</a></li>
+                                <li><a href="#" data-i18n="nav.about.reports">Месечни доклади</a></li>
+                                <li><a href="#" data-i18n="nav.about.financial">Финансови отчети</a></li>
+                                <li><a href="#" data-i18n="nav.about.links">Полезни връзки</a></li>
+                                <li><a href="#" data-i18n="nav.about.data">Защита на личните данни</a></li>
+                                <li><a href="#" data-i18n="nav.about.conditions">Условия за ползване на сайта</a></li>
+                                <li><a href="#" data-i18n="nav.about.contact">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link active" data-i18n="nav.products">Продукти и услуги</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.products.balancing">Действия на ОПС по балансиране</a></li>
+                                <li><a href="#" data-i18n="nav.products.grp">GRP сегмент</a></li>
+                                <li><a href="#" data-i18n="nav.products.short">Краткосрочен борсов сегмент</a></li>
+                                <li><a href="#" data-i18n="nav.products.long">Дългосрочен борсов сегмент</a></li>
+                                <li><a href="#" data-i18n="nav.products.auction">Провеждане на аукцион</a></li>
+                                <li><a href="#" data-i18n="nav.products.chiren">Точка за търговия UGS Chiren</a></li>
+                                <li><a href="#" data-i18n="nav.products.igb">Точка за търговия IGB Locational</a></li>
+                                <li><a href="#" data-i18n="nav.products.ip">Точка за търговия IP Stara Zagora</a></li>
+                                <li><a href="#" data-i18n="nav.products.galata">Точка за търговия GIS GALATA</a></li>
+                                <li><a href="#" data-i18n="nav.products.rulebook">Правила за работа</a></li>
+                                <li><a href="#" data-i18n="nav.products.api">API Услуги</a></li>
+                                <li><a href="fees.html" class="active" data-i18n="nav.products.fees">Такси</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.membership">Членство</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.membership.registration">Процедура за регистрация</a></li>
+                                <li><a href="../membership/members.html" data-i18n="nav.membership.members">Участници</a></li>
+                                <li><a href="#" data-i18n="nav.membership.remit">REMIT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.news">Новини</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.news.all">Всички новини</a></li>
+                                <li><a href="#" data-i18n="nav.news.press">Прес съобщения</a></li>
+                                <li><a href="#" data-i18n="nav.news.announcements">Съобщения</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.surveillance">Пазарен надзор</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.surveillance.clearing">Clearing and Settlement</a></li>
+                                <li><a href="#" data-i18n="nav.surveillance.documents">Клирингови документи</a></li>
+                                <li><a href="#" data-i18n="nav.surveillance.procedure">Процедура за избор на клиринг</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="/" data-i18n="breadcrumb.home">Начало</a></li>
+                        <li><a href="#" data-i18n="nav.products">Продукти и услуги</a></li>
+                        <li aria-current="page" data-i18n="nav.products.fees">Такси</li>
+                    </ol>
+                </nav>
+                <h1 class="page-title" data-i18n="fees.title">Такси и цени</h1>
+                <p class="page-description" data-i18n="fees.description">Прозрачна структура на таксите за всички услуги на Balkan Gas Hub</p>
+            </div>
+        </section>
+
+        <section class="fees-content">
+            <div class="container">
+                <div class="fees-grid">
+                    <!-- Platform Usage Fees -->
+                    <div class="fee-category">
+                        <h2>Такси за ползване на платформата</h2>
+                        <div class="fee-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Вид на таксата</th>
+                                        <th>Класическа</th>
+                                        <th>Основна</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Еднократна регистрационна такса</td>
+                                        <td>5 000.00 BGN / 2 556.46 EUR</td>
+                                        <td>5 000.00 BGN / 2 556.46 EUR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Месечна такса</td>
+                                        <td>1 700.00 BGN / 869.20 EUR**</td>
+                                        <td>0.00 BGN / 0.00 EUR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Месечна такса за допълнителен търговски екран</td>
+                                        <td>600.00 BGN / 306.78 EUR</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за инцииране на нестандартен продукт</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса обучение</td>
+                                        <td>600.00 BGN / 306.78 EUR</td>
+                                        <td>600.00 BGN / 306.78 EUR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Transaction Fees -->
+                    <div class="fee-category">
+                        <h2>Такси за транзакции</h2>
+                        <div class="fee-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Вид на таксата</th>
+                                        <th>Класическа</th>
+                                        <th>Основна</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Такса за сделка на краткосрочен сегмент</td>
+                                        <td>0.0500 BGN/MWh / 0.0256 EUR/MWh</td>
+                                        <td>0.5000 BGN/MWh / 0.2556 EUR/MWh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за сделка на дългосрочен сегмент</td>
+                                        <td>0.0400 BGN/MWh / 0.0205 EUR/MWh</td>
+                                        <td>0.5000 BGN/MWh / 0.2556 EUR/MWh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за регистрация на сделки на сегмент "Администриране на Двустранни договори"</td>
+                                        <td>0.0300 BGN/MWh / 0.0153 EUR/MWh</td>
+                                        <td>0.0300 BGN/MWh / 0.0153 EUR/MWh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за сделка на брокерски сегмент (доставка на изходни точки от ГПС)</td>
+                                        <td>
+                                            До 6 млн. MWh/год. - 0.0200 BGN/MWh / 0.0102 EUR/MWh<br>
+                                            От 6 млн. MWh/год. до 9 млн. - 0.0150 BGN/MWh / 0.0077 EUR/MWh<br>
+                                            Над 9 млн. MWh/год. - 0.0130 BGN/MWh / 0.0066 EUR/MWh
+                                        </td>
+                                        <td>
+                                            До 6 млн. MWh/год. - 0.0200 BGN/MWh / 0.0102 EUR/MWh<br>
+                                            От 6 млн. MWh/год. до 9 млн. - 0.0150 BGN/MWh / 0.0077 EUR/MWh<br>
+                                            Над 9 млн. MWh/год. - 0.0130 BGN/MWh / 0.0066 EUR/MWh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса при отмяна на сделка*</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="fee-note">* Отмяната на сделка е допустима единствено на дългосрочния сегмент</p>
+                            <p class="fee-note">** В сила от 1.1.2024 г.</p>
+                        </div>
+                    </div>
+
+                    <!-- API Services Fees -->
+                    <div class="fee-category">
+                        <h2>Такси за ползване на API услуги</h2>
+                        <div class="fee-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Вид на таксата</th>
+                                        <th>Класическа</th>
+                                        <th>Основна</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Eднократна такса за конфигуриране на достъп за използване на услугата API</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                        <td>1 200.00 BGN / 613.55 EUR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Месечна такса</td>
+                                        <td>200.00 BGN / 102.26 EUR</td>
+                                        <td>200.00 BGN / 102.26 EUR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- REMIT Services Fees -->
+                    <div class="fee-category">
+                        <h2>Такси за REMIT услугите, предоставяни от ГХБ ЕАД</h2>
+                        <div class="fee-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Услуга</th>
+                                        <th>Такса (без ДДС)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2"><strong>Услуги по докладване</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стандартни договори</td>
+                                        <td>100.00 BGN/Month / 51.13 EUR/Month</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Нестандартни договори</td>
+                                        <td>100.00 BGN/Month / 51.13 EUR/Month</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Докладване на данни към ACER на енергийни транзакции на едро, извършени на организирания пазар на Газов Хъб Балкан ЕАД</td>
+                                        <td>200.00 BGN/Month / 102.26 EUR/Month</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Докладване на данни към ACER на енергийни транзакции на едро (сделки), извършени извън организирания пазар на Газов Хъб Балкан ЕАД</td>
+                                        <td>200.00 BGN/Month / 102.26 EUR/Month</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за докладване, дължима към ACER, в съответствие с Решение (ЕС) 2020/2152*</td>
+                                        <td>Компонент "основана на записите за сделка такса" – определя се въз основа на броя докладвани записи чрез услугата на ГХБ, изчислена в съответствие с член 6(1) (i) и 6(2) от РЕШЕНИЕ (ЕС) 2020/2152</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><strong>Услуги по оповестяване на вътрешна информация</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Такса за нечленове на пазара на ГХБ, които ползват услугата за публикуване на UMM на Платформате за разкриване на вътрешна информация на ГХБ (BGH IIP)**</td>
+                                        <td>50.00 BGN/Month / 25.56 EUR/Month</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="fee-note">* Таксата е дължима за всеки клъстер на докладване, съгласно Решение РЕШЕНИЕ (ЕС) 2020/2152 относно таксите, дължими на Агенцията на Европейския съюз за сътрудничество между регулаторите на енергия (ACER) за събиране, разглеждане, обработване и анализиране на информацията, която съгласно член 8 от Регламент (ЕС) № 1227/2001 се докладва от участниците на пазара или от образуванията, докладващи от тяхно име.</p>
+                            <p class="fee-note">** На база сключено Споразумение за ползване на BGH IIP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Account Information -->
+                <div class="fees-contact">
+                    <h2>Банкови сметки</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Сметка в лева /BGN/:</h3>
+                            <p>Българо-Американска Кредитна Банка АД</p>
+                            <p>SWIFT (BIC): BGUSBGSF</p>
+                            <p>IBAN: BG63BGUS91601006916800</p>
+                            <p>сметка в BGN</p>
+                            <p>София 1000, ул. Славянска 2</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Сметка в евро /EUR/:</h3>
+                            <p>Българо-Американска Кредитна Банка АД</p>
+                            <p>SWIFT (BIC): BGUSBGSF</p>
+                            <p>IBAN: BG45BGUS91601406916800</p>
+                            <p>сметка в EUR</p>
+                            <p>София 1000, ул. Славянска 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.company.title">За нас</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.about.management">Декларация на ръководството</a></li>
+                        <li><a href="#" data-i18n="nav.about.company">За компанията</a></li>
+                        <li><a href="#" data-i18n="nav.about.ownership">Акционери</a></li>
+                        <li><a href="#" data-i18n="nav.about.structure">Структура</a></li>
+                        <li><a href="#" data-i18n="nav.about.reports">Месечни доклади</a></li>
+                        <li><a href="#" data-i18n="nav.about.financial">Финансови отчети</a></li>
+                        <li><a href="#" data-i18n="nav.about.links">Полезни връзки</a></li>
+                        <li><a href="#" data-i18n="nav.about.data">Защита на личните данни</a></li>
+                        <li><a href="#" data-i18n="nav.about.conditions">Условия за ползване на сайта</a></li>
+                        <li><a href="#" data-i18n="nav.about.contact">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.title">Продукти и услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.products.balancing">Действия на ОПС по балансиране</a></li>
+                        <li><a href="#" data-i18n="nav.products.grp">GRP сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.short">Краткосрочен борсов сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.long">Дългосрочен борсов сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.auction">Провеждане на аукцион</a></li>
+                        <li><a href="#" data-i18n="nav.products.chiren">Точка за търговия UGS Chiren</a></li>
+                        <li><a href="#" data-i18n="nav.products.igb">Точка за търговия IGB Locational</a></li>
+                        <li><a href="#" data-i18n="nav.products.ip">Точка за търговия IP Stara Zagora</a></li>
+                        <li><a href="#" data-i18n="nav.products.galata">Точка за търговия GIS GALATA</a></li>
+                        <li><a href="#" data-i18n="nav.products.rulebook">Правила за работа</a></li>
+                        <li><a href="#" data-i18n="nav.products.api">API Услуги</a></li>
+                        <li><a href="fees.html" class="active" data-i18n="nav.products.fees">Такси</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.membership">Членство</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.membership.registration">Процедура за регистрация</a></li>
+                        <li><a href="../membership/members.html" data-i18n="nav.membership.members">Участници</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.clearing">Clearing and Settlement</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.surveillance.documents">Клирингови документи</a></li>
+                        <li><a href="#" data-i18n="nav.surveillance.procedure">Процедура за избор на клиринг</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Balkan Gas Hub. <span data-i18n="footer.rights">Всички права запазени.</span></p>
+                <p class="footer-credits" data-i18n="footer.credits">Създаден от <a href="https://frogsmile.bg/" target="_blank" rel="noopener">FrogSmile Ltd.</a> & <a href="https://pvidev-design.com" target="_blank" rel="noopener">PVidev-Design</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

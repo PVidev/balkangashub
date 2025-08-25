@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkan Gas Hub - Централна газова борса за Югоизточна Европа</title>
+    <meta name="description" content="Balkan Gas Hub е централната газова борса за Югоизточна Европа, предлагаща търговия с природен газ, балансиране на мрежата и клиринг услуги.">
+    <meta name="keywords" content="газова борса, природен газ, търговия, България, Балкани, енергия">
+    <meta name="author" content="Balkan Gas Hub">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Balkan Gas Hub - Централна газова борса">
+    <meta property="og:description" content="Централната газова борса за Югоизточна Европа">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.balkangashub.bg">
+    <meta property="og:image" content="https://www.balkangashub.bg/imgs/logo_1.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Balkan Gas Hub">
+    <meta name="twitter:description" content="Централната газова борса за Югоизточна Европа">
+    <meta name="twitter:image" content="https://www.balkangashub.bg/imgs/logo_1.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.balkangashub.bg">
+    
+    <!-- Preload fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://www.balkangashub.bg/imgs/logo_1.png" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Balkan Gas Hub",
+        "url": "https://www.balkangashub.bg",
+        "logo": "https://www.balkangashub.bg/imgs/logo_1.png",
+        "description": "Централната газова борса за Югоизточна Европа",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link" data-i18n="app.skip_to_content">Прескочи към основното съдържание</a>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p data-i18n="cookie.message">Използваме бисквитки за подобряване на вашето потребителско изживяване.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary" data-i18n="cookie.accept">Приемам</button>
+                <button id="reject-cookies" class="btn btn-secondary" data-i18n="cookie.reject">Отхвърлям</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://www.balkangashub.bg/imgs/logo_1.png" alt="Balkan Gas Hub Logo" width="200" height="56">
+                    </a>
+                </div>
+                
+                <div class="header-controls">
+                    <!-- Theme Switcher -->
+                    <div class="theme-switcher">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Превключи тема" data-i18n-aria="theme.toggle">
+                            <svg class="theme-icon light-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="theme-icon dark-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button id="lang-toggle" class="lang-toggle" aria-label="Превключи език" data-i18n-aria="app.switch_language">
+                            <span id="current-lang">BG</span>
+                            <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="lang-dropdown">
+                            <button class="lang-option" data-lang="bg" data-i18n="languages.bg">Български</button>
+                            <button class="lang-option" data-lang="en" data-i18n="languages.en">English</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Отвори меню" data-i18n-aria="app.open_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.about">За нас</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.about.management">Management Statement</a></li>
+                                <li><a href="#" data-i18n="nav.about.company">About The Company</a></li>
+                                <li><a href="#" data-i18n="nav.about.ownership">Ownership</a></li>
+                                <li><a href="#" data-i18n="nav.about.structure">Structure</a></li>
+                                <li><a href="#" data-i18n="nav.about.reports">Monthly Reports</a></li>
+                                <li><a href="#" data-i18n="nav.about.financial">Financial Statements</a></li>
+                                <li><a href="#" data-i18n="nav.about.links">Useful links</a></li>
+                                <li><a href="#" data-i18n="nav.about.data">Data Protection</a></li>
+                                <li><a href="#" data-i18n="nav.about.conditions">Conditions for use of the website</a></li>
+                                <li><a href="#" data-i18n="nav.about.contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.products">Продукти и услуги</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.products.balancing">TSO Balancing actions</a></li>
+                                <li><a href="#" data-i18n="nav.products.grp">GRP Segment</a></li>
+                                <li><a href="#" data-i18n="nav.products.short">Short-term Exchange Segment</a></li>
+                                <li><a href="#" data-i18n="nav.products.long">Long-term Exchange Segment</a></li>
+                                <li><a href="#" data-i18n="nav.products.auction">Auction Setting Service</a></li>
+                                <li><a href="#" data-i18n="nav.products.chiren">Trading point UGS Chiren</a></li>
+                                <li><a href="#" data-i18n="nav.products.igb">Trading point IGB Locational</a></li>
+                                <li><a href="#" data-i18n="nav.products.ip">Trading point IP Stara Zagora</a></li>
+                                <li><a href="#" data-i18n="nav.products.galata">Trading point GIS GALATA</a></li>
+                                <li><a href="#" data-i18n="nav.products.rulebook">Rulebook</a></li>
+                                <li><a href="#" data-i18n="nav.products.api">API Services</a></li>
+                                <li><a href="products/fees.html" data-i18n="nav.products.fees">Fees</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.membership">Членство</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.membership.registration">Registration Process</a></li>
+                                <li><a href="#" data-i18n="nav.membership.members">Members</a></li>
+                                <li><a href="#" data-i18n="nav.membership.remit">REMIT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.news">Новини</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.news.all">Всички новини</a></li>
+                                <li><a href="#" data-i18n="nav.news.press">Прес съобщения</a></li>
+                                <li><a href="#" data-i18n="nav.news.announcements">Съобщения</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-i18n="nav.surveillance">Пазарен надзор</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#" data-i18n="nav.surveillance.clearing">Clearing and Settlement</a></li>
+                                <li><a href="#" data-i18n="nav.surveillance.documents">Clearing Documents</a></li>
+                                <li><a href="#" data-i18n="nav.surveillance.procedure">Clearing selection procedure</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-i18n="hero.title">Централната газова борса за Югоизточна Европа</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Balkan Gas Hub осигурява ефективна и прозрачна търговия с природен газ, балансиране на мрежата и клиринг услуги за региона.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-large" data-i18n="hero.cta.primary">Стани член</a>
+                        <a href="#" class="btn btn-secondary btn-large" data-i18n="hero.cta.secondary">Научи повече</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-chart">
+                        <canvas id="hero-chart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Data Section -->
+        <section class="market-data">
+            <div class="container">
+                <h2 class="section-title" data-i18n="market.title">Пазарни данни</h2>
+                
+                <!-- Market Data Controls -->
+                <div class="market-controls">
+                    <!-- Navigation Tabs -->
+                    <div class="market-tabs">
+                                        <button class="market-tab" data-tab="intraday" data-i18n="market.tabs.intraday">Intraday</button>
+                <button class="market-tab active" data-tab="day-ahead" data-i18n="market.tabs.day-ahead">Day Ahead</button>
+                <button class="market-tab" data-tab="weeks" data-i18n="market.tabs.weeks">Weeks</button>
+                <button class="market-tab" data-tab="months" data-i18n="market.tabs.months">Months</button>
+                    </div>
+                    
+                    <!-- Filters -->
+                    <div class="market-filters">
+                        <div class="filter-group">
+                            <label for="date-range" data-i18n="market.period">Период:</label>
+                            <div class="date-input">
+                                <svg class="calendar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <input type="text" id="date-range" value="Aug 20, 2025 - Aug 26, 2025" readonly>
+                                <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8">
+                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <!-- Calendar Dropdown -->
+                                <div class="calendar-dropdown" id="calendar-dropdown">
+                                    <div class="calendar-header">
+                                        <span id="calendar-month">August 2025</span>
+                                        <div class="calendar-nav">
+                                            <button class="calendar-nav-btn" id="prev-month">‹</button>
+                                            <button class="calendar-nav-btn" id="next-month">›</button>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar-grid">
+                                        <!-- Calendar days will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="currency" data-i18n="market.filters.currency">Валута:</label>
+                            <div class="currency-input">
+                                <input type="text" id="currency" value="BGN" readonly>
+                                <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8">
+                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <!-- Currency Dropdown -->
+                                <div class="currency-dropdown" id="currency-dropdown">
+                                    <div class="currency-option" data-currency="BGN" data-i18n="currency.bgn">BGN (Bulgarian Lev)</div>
+                                    <div class="currency-option" data-currency="EUR" data-i18n="currency.eur">EUR (Euro)</div>
+                                    <div class="currency-option" data-currency="USD" data-i18n="currency.usd">USD (US Dollar)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="table">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="3" y1="9" x2="21" y2="9"/>
+                                    <line x1="3" y1="15" x2="21" y2="15"/>
+                                    <line x1="9" y1="3" x2="9" y2="21"/>
+                                    <line x1="15" y1="3" x2="15" y2="21"/>
+                                </svg>
+                            </button>
+                            <button class="view-btn" data-view="chart">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,3 9,9 15,6 21,12"/>
+                                    <polyline points="3,15 9,21 15,18 21,24"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gas Market Data Table -->
+                <div class="market-table-container">
+                    <table class="market-table" id="gas-market-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="market.table.headers.date">Gas day</th>
+                                <th data-i18n="market.table.headers.volume">Traded Volume (MWh/d)</th>
+                                <th data-i18n="market.table.headers.trades">Trades</th>
+                                <th data-i18n="market.table.headers.vwap">VWAP (BGN/MWh)</th>
+                                <th data-i18n="market.table.headers.change">VWAP Relative (%)</th>
+                                <th data-i18n="market.table.headers.reference">Reference Price / BGHSPOTIndex (BGN/MWh)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-08-26</td>
+                                <td>63 641</td>
+                                <td>209</td>
+                                <td>62.94</td>
+                                <td class="change-positive">+0.61 ↗</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-25</td>
+                                <td>51 759</td>
+                                <td>151</td>
+                                <td>62.56</td>
+                                <td class="change-positive">+0.64 ↗</td>
+                                <td>62.58</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-24</td>
+                                <td>48 932</td>
+                                <td>134</td>
+                                <td>62.17</td>
+                                <td class="change-positive">+0.52 ↗</td>
+                                <td>62.17</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-23</td>
+                                <td>45 123</td>
+                                <td>128</td>
+                                <td>61.89</td>
+                                <td class="change-positive">+3.72 ↗</td>
+                                <td>61.89</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-22</td>
+                                <td>42 567</td>
+                                <td>119</td>
+                                <td>61.78</td>
+                                <td class="change-neutral">0.00 =</td>
+                                <td>61.78</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-21</td>
+                                <td>39 845</td>
+                                <td>112</td>
+                                <td>61.95</td>
+                                <td class="change-negative">-0.18 ↘</td>
+                                <td>61.95</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-20</td>
+                                <td>37 234</td>
+                                <td>105</td>
+                                <td>62.12</td>
+                                <td class="change-negative">-0.17 ↘</td>
+                                <td>62.12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Market Data Chart Container -->
+                <div class="market-chart-container" style="display: none;">
+                    <div class="chart-wrapper">
+                        <canvas id="market-chart" width="800" height="400"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Settlement Prices Section -->
+                <div class="settlement-prices">
+                    <div class="settlement-header">
+                        <h3 data-i18n="market.settlement_title">Settlement Prices</h3>
+                        <div class="settlement-filters">
+                            <div class="filter-group">
+                                <label for="settlement-date" data-i18n="market.settlement_date">Дата:</label>
+                                <div class="date-input">
+                                    <input type="text" id="settlement-date" value="2025-08-25" readonly>
+                                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8">
+                                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="settlement-controls">
+                        <div class="entries-info">
+                            <label for="entries-per-page" data-i18n="market.entries_per_page">Покажи:</label>
+                            <select id="entries-per-page">
+                                <option value="10" selected>10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                            <span data-i18n="market.entries">записи</span>
+                        </div>
+                        
+                        <div class="search-box">
+                            <label for="settlement-search" data-i18n="market.filters.search">Търсене:</label>
+                            <input type="text" id="settlement-search" placeholder="Търси...">
+                        </div>
+                    </div>
+                    
+                    <div class="settlement-table-container">
+                        <table class="settlement-table" id="settlement-table">
+                            <thead>
+                                <tr>
+                                    <th class="sortable" data-sort="contract" data-i18n="market.settlement.headers.contract">
+                                        Contract
+                                        <svg class="sort-icon" width="12" height="8" viewBox="0 0 12 8">
+                                            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </th>
+                                    <th class="sortable" data-sort="price" data-i18n="market.settlement.headers.price">
+                                        Settlement price (EUR/MWh)
+                                        <svg class="sort-icon" width="12" height="8" viewBox="0 0 12 8">
+                                            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BOM(2025-08-27)</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cal Yr 26</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cal Yr 27</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cal Yr 28</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Dec-25</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Nov-25</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Oct-25</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Q126</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Q127</td>
+                                    <td>32.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Q226</td>
+                                    <td>32.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="pagination">
+                        <div class="pagination-info" data-i18n="market.table.pagination.showing">
+                            Показване на 1 до 10 от 25 записа
+                        </div>
+                        <div class="pagination-controls">
+                            <button class="pagination-btn" disabled data-i18n="market.table.pagination.previous">Previous</button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn" data-i18n="market.table.pagination.next">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title" data-i18n="services.title">Нашите услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <rect x="8" y="8" width="32" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 20L22 26L32 16" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.market.title">Пазарни сегменти</h3>
+                        <p data-i18n="services.market.description">Търговия с природен газ в различни временни сегменти - краткосрочен, дългосрочен и балансиране.</p>
+                        <a href="#" class="service-link" data-i18n="services.market.link">Научи повече →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.membership.title">Стани член</h3>
+                        <p data-i18n="services.membership.description">Присъедини се към нашата общност от търговци и получи достъп до всички пазарни сегменти.</p>
+                        <a href="#" class="service-link" data-i18n="services.membership.link">Кандидатствай →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M8 12L24 4L40 12V36L24 44L8 36V12Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 20L24 28L32 20" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.clearing.title">Клиринг и сетълмент</h3>
+                        <p data-i18n="services.clearing.description">Безопасни и ефективни клиринг услуги за всички транзакции на борсата.</p>
+                        <a href="#" class="service-link" data-i18n="services.clearing.link">Документи →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="news.title">Последни новини</h2>
+                    <a href="#" class="view-all" data-i18n="news.viewAll">Виж всички</a>
+                </div>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month" data-i18n="news.months.dec">Дек</span>
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#" data-i18n="news.item1.title">Нови правила за балансиране на мрежата</a></h3>
+                            <p data-i18n="news.item1.excerpt">Balkan Gas Hub обяви нови правила за балансиране на газовата мрежа, които влизат в сила от 1 януари 2024 г.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">12</span>
+                            <span class="month" data-i18n="news.months.dec">Дек</span>
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#" data-i18n="news.item2.title">Рекорден обем търговия през ноември</a></h3>
+                            <p data-i18n="news.item2.excerpt">През ноември 2023 г. е регистриран рекорден обем търговия с природен газ на борсата.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">08</span>
+                            <span class="month" data-i18n="news.months.dec">Дек</span>
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#" data-i18n="news.item3.title">Нови членове се присъединиха към борсата</a></h3>
+                            <p data-i18n="news.item3.excerpt">Пет нови компании станаха членове на Balkan Gas Hub, разширявайки пазарната ликвидност.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <h2 class="section-title" data-i18n="partners.title">Нашите партньори</h2>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 1</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 2</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 3</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 4</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 5</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="partner-placeholder">Partner 6</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.company.title">За нас</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.about.management">Декларация на ръководството</a></li>
+                        <li><a href="#" data-i18n="nav.about.company">За компанията</a></li>
+                        <li><a href="#" data-i18n="nav.about.ownership">Акционери</a></li>
+                        <li><a href="#" data-i18n="nav.about.structure">Структура</a></li>
+                        <li><a href="#" data-i18n="nav.about.reports">Месечни доклади</a></li>
+                        <li><a href="#" data-i18n="nav.about.financial">Финансови отчети</a></li>
+                        <li><a href="#" data-i18n="nav.about.links">Полезни връзки</a></li>
+                        <li><a href="#" data-i18n="nav.about.data">Защита на личните данни</a></li>
+                        <li><a href="#" data-i18n="nav.about.conditions">Условия за ползване на сайта</a></li>
+                        <li><a href="#" data-i18n="nav.about.contact">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.title">Продукти и услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.products.balancing">Действия на ОПС по балансиране</a></li>
+                        <li><a href="#" data-i18n="nav.products.grp">GRP сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.short">Краткосрочен борсов сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.long">Дългосрочен борсов сегмент</a></li>
+                        <li><a href="#" data-i18n="nav.products.auction">Провеждане на аукцион</a></li>
+                        <li><a href="#" data-i18n="nav.products.chiren">Точка за търговия UGS Chiren</a></li>
+                        <li><a href="#" data-i18n="nav.products.igb">Точка за търговия IGB Locational</a></li>
+                        <li><a href="#" data-i18n="nav.products.ip">Точка за търговия IP Stara Zagora</a></li>
+                        <li><a href="#" data-i18n="nav.products.galata">Точка за търговия GIS GALATA</a></li>
+                        <li><a href="#" data-i18n="nav.products.rulebook">Правила за работа</a></li>
+                        <li><a href="#" data-i18n="nav.products.api">API Услуги</a></li>
+                                                        <li><a href="products/fees.html" data-i18n="nav.products.fees">Такси</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.membership">Членство</h3>
+                    <ul class="footer-links">
+                                                        <li><a href="#" data-i18n="nav.membership.registration">Процедура за регистрация</a></li>
+                                <li><a href="membership/members.html" data-i18n="nav.membership.members">Участници</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.clearing">Clearing and Settlement</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.surveillance.documents">Клирингови документи</a></li>
+                        <li><a href="#" data-i18n="nav.surveillance.procedure">Процедура за избор на клиринг</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Balkan Gas Hub. <span data-i18n="footer.rights">Всички права запазени.</span></p>
+                <p class="footer-credits" data-i18n="footer.credits">Създаден от <a href="https://frogsmile.bg/" target="_blank" rel="noopener">FrogSmile Ltd.</a> & <a href="https://pvidev-design.com" target="_blank" rel="noopener">PVidev-Design</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Chart.js for market data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

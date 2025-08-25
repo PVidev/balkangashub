@@ -1,0 +1,379 @@
+{
+  "nav": {
+    "about": "About Us",
+    "about.management": "Management Statement",
+    "about.company": "About The Company",
+    "about.ownership": "Ownership",
+    "about.structure": "Structure",
+    "about.reports": "Monthly Reports",
+    "about.financial": "Financial Statements",
+    "about.links": "Useful links",
+    "about.data": "Data Protection",
+    "about.conditions": "Conditions for use of the website",
+    "about.contact": "Contact Us",
+    "products": "Products and Services",
+    "products.balancing": "TSO Balancing actions",
+    "products.grp": "GRP Segment",
+    "products.short": "Short-term Exchange Segment",
+    "products.long": "Long-term Exchange Segment",
+    "products.auction": "Auction Setting Service",
+    "products.chiren": "Trading point UGS Chiren",
+    "products.igb": "Trading point IGB Locational",
+    "products.ip": "Trading point IP Stara Zagora",
+    "products.galata": "Trading point GIS GALATA",
+    "products.rulebook": "Rulebook",
+    "products.api": "API Services",
+    "products.fees": "Fees",
+    "membership": "Membership",
+    "membership.registration": "Registration Process",
+    "membership.members": "Members",
+    "membership.remit": "REMIT",
+    "news": "News",
+    "news.all": "All News",
+    "news.press": "Press Releases",
+    "news.announcements": "Announcements",
+    "surveillance": "Market Surveillance",
+    "surveillance.clearing": "Clearing and Settlement",
+    "surveillance.documents": "Clearing Documents",
+    "surveillance.procedure": "Clearing selection procedure"
+  },
+  "hero": {
+    "title": "Central Gas Exchange for Southeast Europe",
+    "subtitle": "Balkan Gas Hub provides efficient and transparent natural gas trading, network balancing and clearing services for the region.",
+    "cta": {
+      "primary": "Become a Member",
+      "secondary": "Learn More"
+    }
+  },
+  "market": {
+    "title": "Market Data",
+    "tabs": {
+      "intraday": "Intraday",
+      "day-ahead": "Day Ahead",
+      "weeks": "Weeks",
+      "months": "Months"
+    },
+    "views": {
+      "table": "Table",
+      "chart": "Chart"
+    },
+    "filters": {
+      "date_range": "Date Range",
+      "currency": "Currency",
+      "search": "Search",
+      "entries_per_page": "Entries per page"
+    },
+    "table": {
+      "headers": {
+        "date": "Date",
+        "volume": "Volume",
+        "trades": "Trades",
+        "vwap": "VWAP ({currency}/MWh)",
+        "change": "Change",
+        "reference": "Reference"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "entries": "entries",
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "settlement": {
+      "title": "Settlement Prices",
+      "headers": {
+        "contract": "Contract",
+        "price": "Settlement price ({currency}/MWh)"
+      }
+    },
+    "day": {
+      "title": "Daily Price",
+      "date": "Today"
+    },
+    "week": {
+      "title": "Weekly Price",
+      "date": "This Week"
+    },
+    "volume": {
+      "title": "Trading Volume",
+      "date": "Today"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "market": {
+      "title": "Market Segments",
+      "description": "Natural gas trading in different time segments - short-term, long-term and balancing.",
+      "link": "Learn More →"
+    },
+    "membership": {
+      "title": "Become a Member",
+      "description": "Join our community of traders and get access to all market segments.",
+      "link": "Apply Now →"
+    },
+    "clearing": {
+      "title": "Clearing and Settlement",
+      "description": "Secure and efficient clearing services for all exchange transactions.",
+      "link": "Documents →"
+    }
+  },
+  "news": {
+    "title": "Latest News",
+    "viewAll": "View All",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "item1": {
+      "title": "New Network Balancing Rules",
+      "excerpt": "Balkan Gas Hub announced new gas network balancing rules effective from January 1, 2024."
+    },
+    "item2": {
+      "title": "Record Trading Volume in November",
+      "excerpt": "Record trading volume was registered in November 2023 on the exchange."
+    },
+    "item3": {
+      "title": "New Members Joined the Exchange",
+      "excerpt": "Five new companies became members of Balkan Gas Hub, expanding market liquidity."
+    }
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "footer": {
+    "description": "The central gas exchange for Southeast Europe, providing efficient and transparent natural gas trading.",
+    "contact": {
+      "title": "Contact",
+      "address": "Address:",
+      "phone": "Phone:",
+      "email": "Email:"
+    },
+    "quick": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "products": "Products",
+      "membership": "Membership",
+      "news": "News"
+    },
+    "legal": {
+      "title": "Legal Information",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookies",
+      "terms": "Terms of Use",
+      "gdpr": "GDPR"
+    },
+    "services": {
+      "title": "Services",
+      "trading": "Trading",
+      "clearing": "Clearing",
+      "settlement": "Settlement",
+      "balancing": "Balancing",
+      "membership": "Membership",
+      "api": "API Services"
+    },
+    "resources": {
+      "title": "Resources",
+      "documents": "Documents",
+      "reports": "Reports",
+      "statistics": "Statistics",
+      "publications": "Publications",
+      "faq": "FAQ",
+      "support": "Support"
+    },
+    "regulatory": {
+      "title": "Regulatory",
+      "compliance": "Compliance",
+      "licenses": "Licenses",
+      "regulations": "Regulations",
+      "supervision": "Supervision",
+      "audit": "Audit"
+    },
+    "company": {
+      "title": "Company",
+      "management": "Management",
+      "structure": "Structure",
+      "careers": "Careers",
+      "investors": "Investors",
+      "press": "Press",
+      "contact": "Contact"
+    },
+    "credits": "Created by FrogSmile Ltd. & PVidev-Design",
+    "rights": "All rights reserved."
+  },
+  "cookie": {
+    "message": "We use cookies to improve your user experience.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "theme": {
+    "light": "Light theme",
+    "dark": "Dark theme",
+    "toggle": "Toggle theme"
+  },
+  "app": {
+    "switch_language": "Switch language",
+    "open_menu": "Open menu",
+    "skip_to_content": "Skip to main content"
+  },
+  "calendar": {
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    }
+  },
+  "currency": {
+    "bgn": "BGN (Bulgarian Lev)",
+    "eur": "EUR (Euro)",
+    "usd": "USD (US Dollar)"
+  },
+  "languages": {
+    "bg": "Bulgarian",
+    "en": "English"
+  },
+  "app": {
+    "skip_to_content": "Skip to main content",
+    "switch_language": "Switch language",
+    "open_menu": "Open menu"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "cookie": {
+    "message": "We use cookies to improve your user experience.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "footer": {
+    "company": {
+      "title": "About Us"
+    },
+    "services": {
+      "title": "Products and Services",
+      "membership": "Membership",
+      "clearing": "Clearing and Settlement"
+    },
+    "rights": "All rights reserved.",
+    "credits": "Created by"
+  },
+  "market": {
+    "period": "Period:",
+    "entries_per_page": "Show:",
+    "entries": "entries",
+    "settlement_title": "Settlement Prices",
+    "settlement_date": "Date:"
+  },
+  "fees": {
+    "title": "Fees and Pricing",
+    "description": "Transparent fee structure for all Balkan Gas Hub services",
+    "trading": {
+      "title": "Trading Fees",
+      "day_ahead": "Day Ahead",
+      "day_ahead_desc": "Fee for day ahead trading",
+      "intraday": "Intraday",
+      "intraday_desc": "Fee for intraday trading",
+      "forward": "Forward Contracts",
+      "forward_desc": "Fee for forward contracts"
+    },
+    "membership": {
+      "title": "Membership Fees",
+      "registration": "Registration",
+      "registration_desc": "One-time registration fee",
+      "annual": "Annual Fee",
+      "annual_desc": "Annual membership fee",
+      "clearing": "Clearing",
+      "clearing_desc": "Fee for clearing services"
+    },
+    "technical": {
+      "title": "Technical Fees",
+      "api": "API Access",
+      "api_desc": "Monthly fee for API access",
+      "data": "Data",
+      "data_desc": "Fee for data access",
+      "support": "Support",
+      "support_desc": "Fee for technical support"
+    },
+    "additional": {
+      "title": "Additional Services",
+      "training": "Training",
+      "training_desc": "Fee for staff training",
+      "consulting": "Consulting",
+      "consulting_desc": "Fee for consulting services",
+      "custom": "Custom Solutions",
+      "custom_desc": "Customized solutions according to needs"
+    },
+    "table": {
+      "service": "Service",
+      "fee": "Fee",
+      "description": "Description"
+    },
+    "notes": {
+      "title": "Important Notes",
+      "vat": "All prices are excluding VAT. 20% VAT applies to all fees.",
+      "currency": "All prices are in Bulgarian Lev (BGN).",
+      "validity": "Prices are valid from January 1, 2025.",
+      "changes": "Balkan Gas Hub reserves the right to change fees with prior notice.",
+      "contact": "For additional information, please contact us."
+    },
+    "contact": {
+      "title": "Fees Contact",
+      "email": "Email:",
+      "phone": "Phone:",
+      "address": "Address:",
+      "address_value": "1 \"Tsar Simeon\" St., 1000 Sofia, Bulgaria"
+    }
+  },
+      "breadcrumb": {
+        "home": "Home"
+    },
+    "members": {
+        "title": "Members",
+        "description": "List of all participants in Balkan Gas Hub",
+        "tso": {
+            "title": "Transmission System Operators (TSO)"
+        },
+        "traders": {
+            "title": "Traders"
+        },
+        "local_production": {
+            "title": "Local Production"
+        },
+        "table": {
+            "number": "Number",
+            "participant": "Participant",
+            "eic": "EIC",
+            "license": "Natural Gas Trading License",
+            "clearing_member": "Clearing Member"
+        }
+    }
+}
