@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Statement - Balkan Gas Hub</title>
+    <meta name="description" content="Декларация на управлението на BALKAN GAS HUB EAD относно политиката за информационна сигурност">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="app.skip_to_content">Прескочи към основното съдържание</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" aria-label="Balkan Gas Hub - Начална страница">
+                    <img src="https://www.balkangashub.bg/imgs/logo_2.png" alt="Balkan Gas Hub Logo" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Header Controls -->
+            <div class="header-controls">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button id="lang-toggle" class="lang-toggle" aria-expanded="false" aria-label="Превключи език">
+                        <span id="current-lang">BG</span>
+                        <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option" data-lang="bg" data-i18n="languages.bg">Български</button>
+                        <button class="lang-option" data-lang="en" data-i18n="languages.en">English</button>
+                    </div>
+                </div>
+                
+                <!-- Login Button -->
+                <div class="login-section">
+                    <button id="login-btn" class="btn btn-login" data-i18n="auth.login">
+                        <svg class="login-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                            <polyline points="10,17 15,12 10,7"/>
+                            <line x1="15" y1="12" x2="3" y2="12"/>
+                        </svg>
+                        <span class="login-text">Вход</span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Отвори меню" data-i18n-aria="app.open_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link active" data-i18n="nav.about">За нас</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="management-statement.html" class="active" data-i18n="nav.about.management">Декларация на ръководството</a></li>
+                            <li><a href="#" data-i18n="nav.about.company">За компанията</a></li>
+                            <li><a href="#" data-i18n="nav.about.ownership">Акционери</a></li>
+                            <li><a href="#" data-i18n="nav.about.structure">Структура</a></li>
+                            <li><a href="#" data-i18n="nav.about.reports">Месечни доклади</a></li>
+                            <li><a href="#" data-i18n="nav.about.financial">Финансови отчети</a></li>
+                            <li><a href="#" data-i18n="nav.about.links">Полезни връзки</a></li>
+                            <li><a href="#" data-i18n="nav.about.data">Защита на личните данни</a></li>
+                            <li><a href="#" data-i18n="nav.about.conditions">Условия за ползване на сайта</a></li>
+                            <li><a href="#" data-i18n="nav.about.contact">Контакти</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-i18n="nav.products">Продукти и услуги</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" data-i18n="nav.products.balancing">Действия на ОПС по балансиране</a></li>
+                            <li><a href="#" data-i18n="nav.products.grp">GRP сегмент</a></li>
+                            <li><a href="#" data-i18n="nav.products.short">Краткосрочен борсов сегмент</a></li>
+                            <li><a href="#" data-i18n="nav.products.long">Дългосрочен борсов сегмент</a></li>
+                            <li><a href="#" data-i18n="nav.products.auction">Провеждане на аукцион</a></li>
+                            <li><a href="#" data-i18n="nav.products.chiren">Точка за търговия UGS Chiren</a></li>
+                            <li><a href="#" data-i18n="nav.products.igb">Точка за търговия IGB Locational</a></li>
+                            <li><a href="#" data-i18n="nav.products.ip">Точка за търговия IP Stara Zagora</a></li>
+                            <li><a href="#" data-i18n="nav.products.galata">Точка за търговия GIS GALATA</a></li>
+                            <li><a href="#" data-i18n="nav.products.rulebook">Правила за работа</a></li>
+                            <li><a href="#" data-i18n="nav.products.api">API Услуги</a></li>
+                            <li><a href="../products/fees.html" data-i18n="nav.products.fees">Такси</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-i18n="nav.membership">Членство</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" data-i18n="nav.membership.registration">Процедура за регистрация</a></li>
+                            <li><a href="../membership/members.html" data-i18n="nav.membership.members">Участници</a></li>
+                            <li><a href="#" data-i18n="nav.membership.remit">REMIT</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-i18n="nav.news">Новини</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" data-i18n="nav.news.all">Всички новини</a></li>
+                            <li><a href="#" data-i18n="nav.news.press">Прес съобщения</a></li>
+                            <li><a href="#" data-i18n="nav.news.announcements">Съобщения</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-i18n="nav.surveillance">Пазарен надзор</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#" data-i18n="nav.surveillance.clearing">Clearing and Settlement</a></li>
+                            <li><a href="#" data-i18n="nav.surveillance.documents">Клирингови документи</a></li>
+                            <li><a href="#" data-i18n="nav.surveillance.procedure">Процедура за избор на клиринг</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html" data-i18n="breadcrumb.home">Начало</a></li>
+                        <li><a href="../index.html" data-i18n="nav.about">За нас</a></li>
+                        <li aria-current="page" data-i18n="management.statement">Декларация на управлението</li>
+                    </ol>
+                </nav>
+                <h1 class="page-title" data-i18n="management.statement">Декларация на управлението</h1>
+                <p class="page-description" data-i18n="management.statement_subtitle">Декларация на управлението на BALKAN GAS HUB EAD относно политиката за информационна сигурност</p>
+            </div>
+        </section>
+
+        <!-- Management Statement Content -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Statement Header -->
+                    <div class="statement-header">
+                        <div class="statement-logo">
+                            <img src="https://www.balkangashub.bg/imgs/logo_2.png" alt="Balkan Gas Hub Logo" class="statement-logo-img">
+                        </div>
+                        <div class="statement-title">
+                            <h2 class="declaration-title">DECLARATION</h2>
+                            <p class="declaration-subtitle">of BALKAN GAS HUB EAD Management</p>
+                        </div>
+                    </div>
+
+                    <!-- Statement Subject -->
+                    <div class="statement-subject">
+                        <p class="subject-label">SUBJECT:</p>
+                        <h3 class="subject-title">INFORMATION SECURITY POLICY</h3>
+                    </div>
+
+                    <!-- Statement Body -->
+                    <div class="statement-body">
+                        <p>BALKAN GAS HUB EAD maintains and operates an electronic platform, based on its own and leased infrastructure, that enables the conclusion of bilateral contracts and exchange-based trading with physical and non-physical products—natural gas, energy products, energy carriers, energy, green and white certificates, carbon emissions, and other products related to energy consumption.</p>
+
+                        <p>Providing and maintaining reliable information solutions that meet the high demands of the company's clients is a key factor for the successful business operations of BALKAN GAS HUB EAD.</p>
+
+                        <p>The electronic trading platform and its associated services offered by the company—including provision, operation, and maintenance of a specialized electronic platform for trading in energy and energy-related products (natural gas) through access to the platform; provision, maintenance, and administration of user access required for exchange trading—comply with all information security requirements.</p>
+
+                        <p>Our objective and strategic goal is to meet the needs and expectations of our current and potential clients by delivering secure information services.</p>
+
+                        <p>Recognizing the importance of information security and personal data protection, the management of BALKAN GAS HUB EAD is committed to:</p>
+
+                        <ul class="commitment-list">
+                            <li>Developing and maintaining information security policies and objectives aligned with the organization's development vision;</li>
+                            <li>Creating the conditions for full and comprehensive integration of the Information Security Management System (ISMS) into the organization's operational processes;</li>
+                            <li>Providing all necessary resources for the functioning, monitoring, review, maintenance, and continuous improvement of the ISMS, in accordance with the requirements of the international standard ISO 27001:2022;</li>
+                            <li>Promoting the importance of effective management of the ISMS and compliance with its requirements by developing and implementing mechanisms to support and encourage employees to contribute to improving its effectiveness;</li>
+                            <li>Affirming its leadership role in the continuous improvement of the ISMS within the organization.</li>
+                        </ul>
+
+                        <p>The Information Security Management System aims to ensure the protection of information in terms of:</p>
+
+                        <div class="security-aspects">
+                            <div class="security-aspect">
+                                <h4 class="aspect-title">AVAILABILITY</h4>
+                                <p class="aspect-description">Information processed and stored by BALKAN GAS HUB EAD and its associated assets must be available and accessible to authorized personnel whenever necessary.</p>
+                            </div>
+
+                            <div class="security-aspect">
+                                <h4 class="aspect-title">INTEGRITY</h4>
+                                <p class="aspect-description">BALKAN GAS HUB EAD ensures the protection of the integrity and completeness of the information it processes and stores, as well as of the methods used for its processing, in order to prevent intentional, accidental, partial, or complete destruction or unauthorized alteration of data, in both electronic and non-electronic form.</p>
+                            </div>
+
+                            <div class="security-aspect">
+                                <h4 class="aspect-title">CONFIDENTIALITY</h4>
+                                <p class="aspect-description">Information processed and stored by BALKAN GAS HUB EAD must only be provided or disclosed to authorized individuals.</p>
+                            </div>
+                        </div>
+
+                        <p><strong>Protection of Personal Data and Individual Privacy</strong> - The company's personal data protection policy fully complies with the Personal Data Protection Act and the regulatory documents of the European Union (Regulation (EU) 2016/679 – General Data Protection Regulation, GDPR).</p>
+
+                        <p>The management of BALKAN GAS HUB EAD declares its intent and responsibility to uphold the objectives and principles of information security and personal data protection in accordance with the organization's vision and business goals.</p>
+
+                        <p>Identification and assessment of information security risks and their potential occurrence is carried out through a process-based approach, taking into account changes in security requirements, the risk environment, and priorities for risk treatment.</p>
+
+                        <p>BALKAN GAS HUB EAD has established and approved risk acceptance criteria aligned with the nature of its operations, technical capabilities, regulatory requirements, and financial, social, and human factors.</p>
+
+                        <p>Identified risks are treated by implementing appropriate control mechanisms in accordance with ISO 27001:2022 and its Annex A.</p>
+
+                        <p>Legal requirements relevant to the Information Security Management System are determined in accordance with the Energy Act, Personal Data Protection Act, Cybersecurity Act, Electronic Document and Electronic Signature Act, Accounting Act, Classified Information Protection Act, Copyright and Related Rights Act, E-Commerce Act, Electronic Communications Act, Competition Protection Act, Disaster Protection Act, EU Regulations and Directives, and the international standard ISO 27001:2022.</p>
+
+                        <p>To implement this Information Security Policy and ensure the operation of the ISMS at BALKAN GAS HUB EAD, an Information Security Management System Officer has been appointed, and an Information Security Council has been established.</p>
+
+                        <p>All employees of BALKAN GAS HUB EAD are required to comply with all information security rules described in procedures, policies, instructions, and other documents from the ISMS.</p>
+
+                        <p>This Information Security Policy states that disciplinary actions will be taken against individuals who violate its rules and provisions.</p>
+
+                        <p>The current Information Security Policy will be reviewed regularly—at least once per year—or in the event of significant changes in the organizational environment, business circumstances, applicable legislation, or technical environment, to ensure its relevance, adequacy, and effectiveness.</p>
+
+                        <p>This Information Security Policy is communicated to all employees of BALKAN GAS HUB EAD as well as to all interested parties.</p>
+                    </div>
+
+                    <!-- Statement Signature -->
+                    <div class="statement-signature">
+                        <div class="signature-line">
+                            <p class="signature-title">EXECUTIVE DIRECTOR OF BALKAN GAS HUB EAD</p>
+                            <p class="signature-name">PETYA TODOROVA IVANOVA</p>
+                        </div>
+                        <div class="signature-date">
+                            <p>Sofia, 19.03.2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://www.balkangashub.bg/imgs/logo_2.png" alt="Balkan Gas Hub Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description" data-i18n="footer.description">Централната газова борса за Югоизточна Европа.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contact.title">Контакти</h3>
+                    <ul class="footer-contact">
+                        <li><span data-i18n="footer.contact.address">Адрес:</span> 1 "Цар Симеон" ул., 1000 София, България</li>
+                        <li><span data-i18n="footer.contact.phone">Телефон:</span> +359 2 123 4567</li>
+                        <li><span data-i18n="footer.contact.email">Имейл:</span> info@balkangashub.bg</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quick.title">Бързи линкове</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html" data-i18n="footer.quick.about">За нас</a></li>
+                        <li><a href="../products/fees.html" data-i18n="footer.quick.products">Продукти</a></li>
+                        <li><a href="#" data-i18n="footer.quick.membership">Членство</a></li>
+                        <li><a href="#" data-i18n="footer.quick.news">Новини</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.legal.title">Правна информация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.legal.privacy">Политика за поверителност</a></li>
+                        <li><a href="#" data-i18n="footer.legal.cookies">Бисквитки</a></li>
+                        <li><a href="#" data-i18n="footer.legal.terms">Условия за ползване</a></li>
+                        <li><a href="#" data-i18n="footer.legal.gdpr">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Balkan Gas Hub. <span data-i18n="footer.rights">Всички права запазени.</span></p>
+                <p class="footer-credits" data-i18n="footer.credits">Създадено от FrogSmile Ltd. & PVidev-Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p data-i18n="cookie.message">Използваме бисквитки за подобряване на вашето потребителско изживяване.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn btn-primary" data-i18n="cookie.accept">Приемам</button>
+                <button id="reject-cookies" class="btn btn-secondary" data-i18n="cookie.reject">Отхвърлям</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="auth.login">Вход</h2>
+                <button class="modal-close" id="login-modal-close" aria-label="Затвори">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label for="login-email" data-i18n="auth.email">E-Mail Address</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password" data-i18n="auth.password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="login-remember" name="remember">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text" data-i18n="auth.remember_me">Remember Me</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-login-submit" data-i18n="auth.login">Login</button>
+                        <a href="#" class="forgot-password" data-i18n="auth.forgot_password">Forgot Your Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div id="reset-password-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="auth.reset_password">Reset Password</h2>
+                <button class="modal-close" id="reset-password-modal-close" aria-label="Затвори">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="reset-password-form" class="reset-password-form">
+                    <div class="form-group">
+                        <label for="reset-email" data-i18n="auth.email">E-Mail Address</label>
+                        <input type="email" id="reset-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-reset-submit" data-i18n="auth.send_reset_link">Send Password Reset Link</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Chart.js for market data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

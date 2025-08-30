@@ -266,6 +266,22 @@
     "switch_language": "Превключи език",
     "open_menu": "Отвори меню"
   },
+  "auth": {
+    "login": "Вход",
+    "logout": "Изход",
+    "register": "Регистрация",
+    "profile": "Профил",
+    "email": "E-Mail адрес",
+    "password": "Парола",
+    "remember_me": "Запомни ме",
+    "forgot_password": "Забравена парола?",
+    "reset_password": "Нулиране на парола",
+    "send_reset_link": "Изпрати линк за нулиране на парола"
+  },
+  "management": {
+    "statement": "Декларация на управлението",
+    "statement_subtitle": "Декларация на управлението на BALKAN GAS HUB EAD относно политиката за информационна сигурност"
+  },
   "theme": {
     "toggle": "Превключи тема"
   },
@@ -284,7 +300,7 @@
       "clearing": "Clearing and Settlement"
     },
     "rights": "Всички права запазени.",
-    "credits": "Създаден от"
+    "credits": "Създадено от FrogSmile Ltd. & PVidev-Design"
   },
   "market": {
     "period": "Период:",

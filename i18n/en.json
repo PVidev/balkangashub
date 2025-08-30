@@ -227,6 +227,22 @@
     "open_menu": "Open menu",
     "skip_to_content": "Skip to main content"
   },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "profile": "Profile",
+    "email": "E-Mail Address",
+    "password": "Password",
+    "remember_me": "Remember Me",
+    "forgot_password": "Forgot Your Password?",
+    "reset_password": "Reset Password",
+    "send_reset_link": "Send Password Reset Link"
+  },
+  "management": {
+    "statement": "Management Statement",
+    "statement_subtitle": "Declaration of BALKAN GAS HUB EAD Management regarding Information Security Policy"
+  },
   "calendar": {
     "months": {
       "january": "January",
@@ -284,7 +300,7 @@
       "clearing": "Clearing and Settlement"
     },
     "rights": "All rights reserved.",
-    "credits": "Created by"
+    "credits": "Created by FrogSmile Ltd. & PVidev-Design"
   },
   "market": {
     "period": "Period:",

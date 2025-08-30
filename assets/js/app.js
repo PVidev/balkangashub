@@ -17,6 +17,7 @@ async function initializeApp() {
         // Initialize components
         initializeThemeSwitcher();
         initializeLanguageSwitcher();
+        initializeLoginButton();
         initializeMobileMenu();
         initializeDropdowns();
         initializeCookieBanner();
@@ -1477,6 +1478,262 @@ function updateMarketChart(data, tabType) {
 function initializeMarketChart() {
     // This function is now handled by updateMarketChart
     console.log('Chart initialization handled by updateMarketChart');
+}
+
+// ===== LOGIN BUTTON FUNCTIONALITY =====
+function initializeLoginButton() {
+    const loginBtn = document.getElementById('login-btn');
+    if (!loginBtn) return;
+
+    loginBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        handleLoginClick();
+    });
+    
+    // Initialize modal functionality
+    initializeLoginModal();
+}
+
+function initializeLoginModal() {
+    const modal = document.getElementById('login-modal');
+    const closeBtn = document.getElementById('login-modal-close');
+    const loginForm = document.getElementById('login-form');
+    const forgotPasswordLink = document.querySelector('.forgot-password');
+    
+    if (!modal) return;
+    
+    // Close button functionality
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeLoginModal();
+        });
+    }
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeLoginModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeLoginModal();
+        }
+    });
+    
+    // Form submission
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleLoginSubmit();
+        });
+    }
+    
+    // Forgot password link
+    if (forgotPasswordLink) {
+        forgotPasswordLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleForgotPassword();
+        });
+    }
+    
+    // Initialize reset password modal
+    initializeResetPasswordModal();
+}
+
+function initializeResetPasswordModal() {
+    const modal = document.getElementById('reset-password-modal');
+    const closeBtn = document.getElementById('reset-password-modal-close');
+    const resetForm = document.getElementById('reset-password-form');
+    
+    if (!modal) return;
+    
+    // Close button functionality
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeResetPasswordModal();
+        });
+    }
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeResetPasswordModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeResetPasswordModal();
+        }
+    });
+    
+    // Form submission
+    if (resetForm) {
+        resetForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleResetPasswordSubmit();
+        });
+    }
+}
+
+function handleResetPasswordSubmit() {
+    const email = document.getElementById('reset-email').value;
+    
+    // Basic validation
+    if (!email) {
+        const message = currentLanguage === 'bg' 
+            ? 'Моля, въведете имейл адрес.' 
+            : 'Please enter an email address.';
+        alert(message);
+        return;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        const message = currentLanguage === 'bg' 
+            ? 'Моля, въведете валиден имейл адрес.' 
+            : 'Please enter a valid email address.';
+        alert(message);
+        return;
+    }
+    
+    // Here you would typically send the reset request to your backend
+    console.log('Password reset request for:', email);
+    
+    // Simulate reset process
+    const submitBtn = document.querySelector('.btn-reset-submit');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = currentLanguage === 'bg' ? 'Изпращане...' : 'Sending...';
+    submitBtn.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+        // For demo purposes, show success message
+        const message = currentLanguage === 'bg' 
+            ? 'Линк за нулиране на парола е изпратен на вашия имейл! (Демо версия)' 
+            : 'Password reset link has been sent to your email! (Demo version)';
+        
+        alert(message);
+        
+        // Reset form and close modal
+        document.getElementById('reset-password-form').reset();
+        closeResetPasswordModal();
+        
+        // Reset button
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }, 1500);
+}
+
+function handleLoginSubmit() {
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+    const remember = document.getElementById('login-remember').checked;
+    
+    // Basic validation
+    if (!email || !password) {
+        const message = currentLanguage === 'bg' 
+            ? 'Моля, попълнете всички полета.' 
+            : 'Please fill in all fields.';
+        alert(message);
+        return;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        const message = currentLanguage === 'bg' 
+            ? 'Моля, въведете валиден имейл адрес.' 
+            : 'Please enter a valid email address.';
+        alert(message);
+        return;
+    }
+    
+    // Here you would typically send the data to your backend
+    console.log('Login attempt:', { email, password, remember });
+    
+    // Simulate login process
+    const submitBtn = document.querySelector('.btn-login-submit');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = currentLanguage === 'bg' ? 'Влизане...' : 'Logging in...';
+    submitBtn.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+        // For demo purposes, show success message
+        const message = currentLanguage === 'bg' 
+            ? 'Успешно влизане! (Демо версия)' 
+            : 'Login successful! (Demo version)';
+        
+        alert(message);
+        
+        // Reset form and close modal
+        document.getElementById('login-form').reset();
+        closeLoginModal();
+        
+        // Reset button
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }, 1500);
+}
+
+function handleForgotPassword() {
+    openResetPasswordModal();
+}
+
+function openResetPasswordModal() {
+    const modal = document.getElementById('reset-password-modal');
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Focus on email input
+        const emailInput = modal.querySelector('input[type="email"]');
+        if (emailInput) {
+            setTimeout(() => emailInput.focus(), 100);
+        }
+    }
+}
+
+function closeResetPasswordModal() {
+    const modal = document.getElementById('reset-password-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+function handleLoginClick() {
+    openLoginModal();
+}
+
+function openLoginModal() {
+    const modal = document.getElementById('login-modal');
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Focus on first input
+        const firstInput = modal.querySelector('input[type="email"]');
+        if (firstInput) {
+            setTimeout(() => firstInput.focus(), 100);
+        }
+    }
+}
+
+function closeLoginModal() {
+    const modal = document.getElementById('login-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
 }
 
 // ===== EXPORT FOR GLOBAL ACCESS =====
